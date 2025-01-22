@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prebuild": "if exist node_modules\\.bin\\vite (icacls node_modules\\.bin\\vite /grant Everyone:F)"
+  
   },
   
   "dependencies": {
